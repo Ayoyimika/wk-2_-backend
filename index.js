@@ -48,4 +48,32 @@ console.log(JambScores);
 
 musa.scores = new createPerson (70,85,82,94);
 
+//Question 4
+
+/* 
+- Object.assign(): 
+This method creates a new object and copies the properties of the original object to the new object.
+- Spread Operator: The spread operator can be used to clone an object.
+- JSON.parse() and JSON.stringify(): This method creates a new object and 
+returns a deep copy of the original object.
+- Object.create(): This method creates a new object and sets the prototype of the new object 
+to be the same as the original object.
+- Custom function: You can also create a custom function to clone an object.
+*/
+
+// Question 5
+const presidentialCandidates = {
+  AAC: 'Omoyele Sowore',
+  ACCORD: 'Christopher Imumolen',
+  APC: 'Bola Ahmed Tinubu',
+  LP: 'Peter Obi',
+  NNPP: 'Rabiu Kwankwaso',
+  PDP: 'Atiku Abubakar',
+};
+
+for (let party in presidentialCandidates) {
+  let candidate = presidentialCandidates[party];
+  console.log(`${candidate} is the presidential candidate of ${party}`);
+}
+
   
